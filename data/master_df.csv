@@ -1,0 +1,31 @@
+EQID,CURRENCY,EXC_CODE,DESCRIPTION,TYPE,CREATED_DATE,UPDATED_DATE,BLCODE
+KOSPI Index,KRW,"Empty DataFrame
+Columns: []
+Index: []",KOSPI INDEX,Equity Index,2021-11-30 11:14:18.290881,2021-11-30 11:14:18.290881,KOSPI Index
+M1WO Index,USD,"Empty DataFrame
+Columns: []
+Index: []",MSCI WORLD NR,Equity Index,2021-11-30 11:14:20.081583,2021-11-30 11:14:20.081583,M1WO Index
+M1EF Index,USD,"Empty DataFrame
+Columns: []
+Index: []",MSCI EM NR,Equity Index,2021-11-30 11:14:21.693087,2021-11-30 11:14:21.693087,M1EF Index
+KBPMABIN Index,KRW,"Empty DataFrame
+Columns: []
+Index: []",KAP All Bonds Idx,Fixed Income Index,2021-11-30 11:14:23.422912,2021-11-30 11:14:23.422912,KBPMABIN Index
+BTSYTRUH Index,USD,"Empty DataFrame
+Columns: []
+Index: []",Global Treasury,Fixed Income Index,2021-11-30 11:14:25.049266,2021-11-30 11:14:25.049266,BTSYTRUH Index
+JPEIGLBL Index,USD,"Empty DataFrame
+Columns: []
+Index: []",J.P. Morgan EMBI Global Total,Index,2021-11-30 11:14:26.501478,2021-11-30 11:14:26.501478,JPEIGLBL Index
+LGCPTRUU Index,USD,"Empty DataFrame
+Columns: []
+Index: []",Corporate,Fixed Income Index,2021-11-30 11:14:28.323160,2021-11-30 11:14:28.323160,LGCPTRUU Index
+RUGL Index,USD,"Empty DataFrame
+Columns: []
+Index: []",EPRA/NAREIT Dev TR USD,Equity Index,2021-11-30 11:14:29.855011,2021-11-30 11:14:29.855011,RUGL Index
+BCOMTR Index,USD,"Empty DataFrame
+Columns: []
+Index: []",BBG Commodity TR,Commodity Index,2021-11-30 11:14:31.340712,2021-11-30 11:14:31.340712,BCOMTR Index
+BCOMGCTR Index,USD,"Empty DataFrame
+Columns: []
+Index: []",BBG Gold TR,Commodity Index,2021-11-30 11:14:32.889495,2021-11-30 11:14:32.889495,BCOMGCTR Index
