@@ -3,6 +3,7 @@ import datetime
 import referenceBL
 
 file_tickers = 'Tickers.csv'
+# file_tickers = 'snp_top50.csv'
 
 
 def create_master_table(tickers_csv):
@@ -52,8 +53,11 @@ def getEquityData(tickers_csv, start_date='20000101'):
     data_table_all = []
     for ticker in tickers:
         print(ticker)
+        print(blp.referenceRequest(ticker, 'NAME'))
+        data_name = blp.referenceRequest(ticker, 'NAME')
         data_table = blp.historicalRequest(securities=ticker,
                                            fields=['PX_Last'], startDate=start_date, endDate=today)
+        # data_table.columns = [data_name]
         data_table.columns = [ticker]
         data_table_all.append(data_table)
 
@@ -74,7 +78,8 @@ if __name__ == "__main__":
     save_id_df = 'master_df.csv'
     master_df.to_csv(save_id_df)
 
-    data = getEquityData(file_tickers, '20110103')
+    data = getEquityData(file_tickers, '20000103')
+    # data = getEquityData(file_tickers, '20110103')
     # save_id_data = ('_').join(['sj_data', '{:02d}{:02d}{:02d}'.format(today.year, today.month,today.day), '.csv'])
     save_id_data = 'data.csv'
     data.to_csv(save_id_data)
