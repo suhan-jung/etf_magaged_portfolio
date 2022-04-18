@@ -54,8 +54,9 @@ def getEquityData(tickers_csv, start_date='20000101'):
         print(ticker)
         print(blp.referenceRequest(ticker, 'NAME'))
         data_name = blp.referenceRequest(ticker, 'NAME')
-        # data_table = blp.historicalRequest(securities=ticker, fields=['PX_Last'], startDate=start_date, endDate=today)
-        data_table = blp.historicalRequest(securities=ticker, fields=['TOT_RETURN_INDEX_GROSS_DVDS'], startDate=start_date, endDate=today)
+        data_table = blp.historicalRequest(securities=ticker, fields=['PX_Last'], startDate=start_date, endDate=today)
+        # data_table = blp.historicalRequest(securities=ticker, fields=['TOT_RETURN_INDEX_GROSS_DVDS'], startDate=start_date, endDate=today)
+        # data_table = blp.historicalRequest(securities=ticker, fields=['ADJUSTED_PREV_LAST_PRICE'], startDate=start_date, endDate=today)
                 
         # data_table.columns = [data_name]
         data_table.columns = [ticker]
