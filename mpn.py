@@ -187,7 +187,7 @@ model.compile(loss=markowitz_objective, optimizer=tf.keras.optimizers.Adam(learn
 
 
 # MPN을 학습하고 결과를 저장한다.
-hist = model.fit(xc_train_scaled, xf_train_scaled, epochs=150, batch_size=32, validation_data=(xc_test_scaled, xf_test_scaled))
+hist = model.fit(xc_train_scaled, xf_train_scaled, epochs=50, batch_size=32, validation_data=(xc_test_scaled, xf_test_scaled))
 model.save(SAVE_MODEL)
 
 
@@ -288,19 +288,19 @@ pd.DataFrame(data=np_w_history, index=date_history[1:], columns=tickers).plot(fi
 # In[ ]:
 
 
-prt_value
+print(prt_value)
 
 
 # In[ ]:
 
 
-crp_value
+print(crp_value)
 
 
 # In[ ]:
 
 
-spy_value
+print(spy_value)
 
 
 # In[ ]:
